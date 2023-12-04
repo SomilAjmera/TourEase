@@ -1,0 +1,36 @@
+doctype html 
+html 
+    head 
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        //- <link rel="stylesheet"  href="css/style.css">
+        link(rel='stylesheet'  href='/css/style.css')
+        link(rel='shortcut icon' type='image/png' href='/img/favicon.png ')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700') 
+        title Natours | #{title}
+        
+
+   
+    body    
+        //- h1=tour
+        //- h2=user.toUpperCase()
+        //- - const x = 9;
+        //- h2= 2 * x
+        //- // h1 = the park camper
+        //- p this is just some text
+
+ 
+        // Header
+        include _header
+
+        // Content
+        block content
+          h1 This is a placeholder heading 
+
+        //footer   
+        include _footer 
+        
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js')
+        //- script(src='/js/login.js')
+        script(src='https://js.stripe.com/v3/')
+        script(src='/js/bundle.js')
